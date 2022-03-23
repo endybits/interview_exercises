@@ -18,5 +18,8 @@ def which_max(n1: int, n2: int):
     else:
         raise Exception('Oops! Something went wrong.')
 
+
 if __name__ == '__main__':
+    print(which_max(-1, 3))
+    print(which_max(265, 54))
     print(which_max(54, 54))

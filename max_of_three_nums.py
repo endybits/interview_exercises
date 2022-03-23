@@ -9,6 +9,7 @@ def custom_except(equals = True):
         Exception: Sae values
         Exception: Another error
     """
+
     if equals:
         return "Values maximun cann't be the same"
     else:
@@ -45,11 +46,12 @@ def max_of_three_nums(n1: int, n2: int, n3:int):
 
     Logic: 
         if n1 > n2 & n2 > n3: then n1 > n3
+    
     Returns:
         _type_: _description_
     """
-    n, equals = which_max(n1, n2)
 
+    n, equals = which_max(n1, n2)
     if not equals:
         max, equals = which_max(n, n3)
         if equals == False:
@@ -67,4 +69,10 @@ def max_of_three_nums(n1: int, n2: int, n3:int):
 if __name__ == '__main__':
     
     mx = max_of_three_nums(2, -2, -3)
+    print(mx)
+
+    mx = max_of_three_nums(2, 2, 4)
+    print(mx)
+
+    mx = max_of_three_nums(2, 5, 5)
     print(mx)
